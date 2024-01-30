@@ -21,9 +21,7 @@ export default {
 
       <!--Modal Container-->
       <div class="z-20 col-span-8">
-        <div>
-          <DiscoverModal />
-        </div>
+        <DiscoverModal />
       </div>
     </div>
 
@@ -39,7 +37,7 @@ export default {
           <!--Facebook SVG-->
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-10"
+            class="w-10 transform transition duration-500 hover:scale-105"
             viewBox="0 0 68 67"
           >
             <g>
@@ -58,7 +56,7 @@ export default {
           <!--Instagram SVG-->
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-10"
+            class="w-10 transform transition duration-500 hover:scale-105"
             viewBox="0 0 73 74"
           >
             <g>

@@ -53,10 +53,6 @@ export default {
         },
       },
       keyframes: {
-        "fade-out": {
-          "0%": { opacity: 1.0 },
-          "100%": { opacity: 0 },
-        },
         "fade-in-slow": {
           "0%": { opacity: 0 },
           "40%": { opacity: 0 },
@@ -87,11 +83,14 @@ export default {
         },
       },
       animation: {
-        "expand-modal": "expand-modal 0.7s ease-out 0s 1 forwards",
-        "circle-border": "circle-border 0.6s ease-in-out 0s 1 forwards",
+        "expand-modal": "expand-modal 0.6s ease-out 0s 1 forwards",
+        "colapse-modal": "expand-modal 0.6s ease-out 0s 1 reverse",
+        "expand-circle-border": "circle-border 0.6s ease-in-out 0s 1 forwards",
+        "colapse-circle-border": "circle-border 0.6s ease-in-out 0s 1 reverse",
         "fade-in-slow": "fade-in-slow 1.0s ease-in-out 0s 1 normal forwards",
-        "fade-in": "fade-in 1.0s ease-in-out 0s 1 normal forwards",
-        "fade-out": "fade-out 1.0s ease-in-out 0s 1 normal forwards",
+        "fade-out-quick": "fade-in-slow 1.0s ease-in-out 0s 1 normal reverse",
+        "fade-in": "fade-in 0.6s ease-in-out 0s 1 normal forwards",
+        "fade-out": "fade-in 0.6s ease-in-out 0s 1 normal reverse",
       },
     },
   },
