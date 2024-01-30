@@ -118,7 +118,7 @@ export default {
                     <!--Close Icon Container-->
                     <div class="absolute right-6 top-6">
                       <button
-                        @click="$emit('close-modal-clicked')"
+                        @click="onMoreDetailsClose()"
                         type="button"
                         class="rounded-lg p-2 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900"
                       >
