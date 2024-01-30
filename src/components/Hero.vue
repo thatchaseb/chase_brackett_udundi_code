@@ -26,7 +26,7 @@ export default {
     </div>
 
     <!--Tree Background Grid-->
-    <div class="bg-trees z-0 col-span-8 grid grid-cols-12 bg-cover bg-right">
+    <div class="bg-tree-image z-0 col-span-8 grid grid-cols-12 bg-cover bg-right">
       <!--Col Span Spacer-->
       <div class="col-span-11"></div>
 

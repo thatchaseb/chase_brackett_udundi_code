@@ -18,7 +18,7 @@ export default {
         brand: "#611818",
       },
       backgroundImage: (theme) => ({
-        trees: "url('/src/assets/Coding-Challenge-image.png')",
+        'tree-image': "url('./src/assets/Coding-Challenge-image.png')",
       }),
       fontFamily: {
         didot: ["GFS Didot", "normal"],
