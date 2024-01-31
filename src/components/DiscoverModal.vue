@@ -122,11 +122,10 @@ export default {
                     }"
                   >
                     <!--Close Icon Container-->
-                    <div class="absolute right-6 top-6">
-                      <button
+                    <div class="absolute right-6 top-6 z-80">
+                      <div
                         @click="onMoreDetailsClose()"
-                        type="button"
-                        class="rounded-lg p-2 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900"
+                        class="cursor-pointer rounded-lg p-2 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900"
                       >
                         <!--Close Icon SVG-->
                         <svg
@@ -138,7 +137,7 @@ export default {
                             d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
                           ></path>
                         </svg>
-                      </button>
+                      </div>
                     </div>
 
                     <!--Modal Main Section-->
@@ -169,11 +168,13 @@ export default {
                       </div>
 
                       <!--Modal Read More Button-->
-                      <button
-                        class="transform bg-gradient-to-r from-brand to-yellow-800 px-14 py-3 text-sm tracking-wide text-white transition duration-500 hover:scale-110 hover:opacity-80"
-                      >
-                        READ MORE
-                      </button>
+                      <a href="https://www.chasebrackett.com/coding">
+                        <button
+                          class="transform bg-gradient-to-r from-brand to-yellow-800 px-14 py-3 text-sm tracking-wide text-white transition duration-500 hover:scale-110 hover:opacity-80"
+                        >
+                          READ MORE
+                        </button>
+                      </a>
                     </div>
                   </div>
                 </div>
