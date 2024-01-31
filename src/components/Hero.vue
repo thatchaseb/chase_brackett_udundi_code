@@ -49,7 +49,7 @@ export default {
           <a href="https://www.chasebrackett.com/coding">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-10 transform cursor-pointer transition duration-300 hover:scale-125 md:w-12 xl:w-14"
+              class="w-10 transform cursor-pointer drop-shadow-md transition duration-300 hover:scale-125 md:w-12 xl:w-14"
               viewBox="0 0 68 67"
             >
               <g>
@@ -70,7 +70,7 @@ export default {
           <a href="https://www.chasebrackett.com/coding">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-10 transform cursor-pointer transition duration-500 hover:scale-125 md:w-12 xl:w-14"
+              class="w-10 transform cursor-pointer drop-shadow-md transition duration-500 hover:scale-125 md:w-12 xl:w-14"
               viewBox="0 0 73 74"
             >
               <g>
