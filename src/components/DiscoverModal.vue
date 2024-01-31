@@ -104,7 +104,10 @@ export default {
 
             <!--Modal Container-->
             <div class="absolute relative">
-              <div class="absolute bottom-0 left-0" v-if="isModalOpen == true">
+              <div
+                class="absolute bottom-0 left-[-80px] sm:left-0"
+                v-if="isModalOpen == true"
+              >
                 <!--Animation Expander-->
                 <div
                   class="z-40 scale-75 md:scale-90 xl:scale-100"
