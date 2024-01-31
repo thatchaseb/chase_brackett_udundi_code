@@ -29,10 +29,15 @@ export default {
       </div>
     </div>
 
-    <!--Tree Background Grid-->
-    <div
-      class="z-0 col-span-10 grid grid-cols-12 bg-tree-image bg-cover bg-right sm:col-span-9 md:col-span-8"
-    >
+    <!--Tree Background-->
+    <img
+      src="../assets/Coding-Challenge-Image.png"
+      class="absolute -z-20 col-span-11 h-[680px] w-full object-cover object-right sm:h-[800px] md:h-[900px] xl:h-[1024px]"
+      alt="Orange Trees"
+    />
+
+    <!--Social Icons Grid-->
+    <div class="z-0 col-span-10 grid grid-cols-12 sm:col-span-9 md:col-span-8">
       <!--Col Span Spacer-->
       <div class="col-span-11"></div>
 
