@@ -17,8 +17,8 @@ export default {
       colors: {
         brand: "#611818",
       },
-      backgroundImage: (theme) => ({
-        'tree-image': "url('./src/assets/Coding-Challenge-image.png')",
+      backgroundImage: () => ({
+        "tree-image": "url('/src/assets/Coding-Challenge-Image.png')",
       }),
       fontFamily: {
         didot: ["GFS Didot", "normal"],
@@ -55,19 +55,32 @@ export default {
       keyframes: {
         "fade-in-slow": {
           "0%": { opacity: 0 },
-          "40%": { opacity: 0 },
+          "60%": { opacity: 0 },
           "100%": { opacity: 1.0 },
+        },
+        "fade-out-fast": {
+          "0%": { opacity: 1.0 },
+          "40%": { opacity: 0 },
+          "100%": { opacity: 0 },
         },
         "fade-in": {
           "0%": { opacity: 0 },
+          "10%": { opacity: 0 },
+          "90%": { opacity: 1.0 },
           "100%": { opacity: 1.0 },
         },
         "circle-border": {
           "0%": {
             borderRadius: "500px",
           },
+          "10%": {
+            borderRadius: "500px",
+          },
           "60%": {
             borderRadius: "100px",
+          },
+          "90%": {
+            borderRadius: "0px",
           },
           "100%": {
             borderRadius: "0px",
@@ -75,55 +88,26 @@ export default {
         },
         "expand-modal": {
           "0%": {
-            transform: "translate(-265px, 320px)  scale(0.04);",
+            transform: "translate(-257px, 315px)  scale(0.07);",
+            opacity: 0,
           },
-          "100%": {
-            transform: "translate(0px, 0px)  scale(1.0); ",
+          "10%": {
+            transform: "translate(-257px, 315px)  scale(0.07);",
+            opacity: 1,
           },
         },
       },
       animation: {
-        "expand-modal": "expand-modal 0.6s ease-out 0s 1 forwards",
-        "colapse-modal": "expand-modal 0.6s ease-out 0s 1 reverse",
-        "expand-circle-border": "circle-border 0.6s ease-in-out 0s 1 forwards",
-        "colapse-circle-border": "circle-border 0.6s ease-in-out 0s 1 reverse",
+        "expand-modal": "expand-modal 0.7s ease-out 0s 1 forwards",
+        "colapse-modal": "expand-modal 0.7s ease-out 0s 1 reverse",
+        "expand-circle-border": "circle-border 0.7s ease-in-out 0s 1 forwards",
+        "colapse-circle-border": "circle-border 0.7s ease-in-out 0s 1 reverse",
         "fade-in-slow": "fade-in-slow 1.0s ease-in-out 0s 1 normal forwards",
-        "fade-out-quick": "fade-in-slow 1.0s ease-in-out 0s 1 normal reverse",
+        "fade-out-fast": "fade-out-fast 0.6s ease-in-out 0s 1 normal forwards",
         "fade-in": "fade-in 0.6s ease-in-out 0s 1 normal forwards",
         "fade-out": "fade-in 0.6s ease-in-out 0s 1 normal reverse",
       },
     },
   },
-  plugins: [
-    aspectRatio,
-    forms,
-    typography,
-    plugin(function ({ addUtilities }) {
-      const utilFormSwitch = {
-        ".form-switch": {
-          border: "transparent",
-          "background-color": colors.gray[300],
-          "background-image":
-            "url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e\")",
-          "background-position": "left center",
-          "background-repeat": "no-repeat",
-          "background-size": "contain !important",
-          "vertical-align": "top",
-          "&:checked": {
-            border: "transparent",
-            "background-color": "currentColor",
-            "background-image":
-              "url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e\")",
-            "background-position": "right center",
-          },
-          "&:disabled, &:disabled + label": {
-            opacity: ".5",
-            cursor: "not-allowed",
-          },
-        },
-      };
-
-      addUtilities(utilFormSwitch);
-    }),
-  ],
+  plugins: [],
 };

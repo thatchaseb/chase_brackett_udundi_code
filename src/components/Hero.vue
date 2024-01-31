@@ -13,9 +13,13 @@ export default {
 
 <template>
   <!--Main Grid-->
-  <div class="relative grid h-[1024px] grid-cols-12">
+  <div
+    class="relative grid h-[680px] grid-cols-12 sm:h-[800px] md:h-[900px] xl:h-[1024px]"
+  >
     <!--Rose Background Grid-->
-    <div class="bg-brand col-span-4 grid grid-cols-12 content-center">
+    <div
+      class="col-span-2 grid grid-cols-12 content-center bg-brand sm:col-span-3 md:col-span-4"
+    >
       <!--Col Span Spacer-->
       <div class="col-span-2"></div>
 
@@ -26,18 +30,20 @@ export default {
     </div>
 
     <!--Tree Background Grid-->
-    <div class="bg-tree-image z-0 col-span-8 grid grid-cols-12 bg-cover bg-right">
+    <div
+      class="z-0 col-span-10 grid grid-cols-12 bg-tree-image bg-cover bg-right sm:col-span-9 md:col-span-8"
+    >
       <!--Col Span Spacer-->
       <div class="col-span-11"></div>
 
       <!--Social Icons Container-->
       <div class="col-span-1 m-4 place-self-end text-white">
         <!--Icon Container-->
-        <div class="mx-2 my-4">
+        <div class="mx-2 my-4 md:mx-4 md:my-6 xl:mx-6 xl:my-8">
           <!--Facebook SVG-->
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-10 transform transition duration-500 hover:scale-105"
+            class="w-10 transform cursor-pointer transition duration-300 hover:scale-125 md:w-12 xl:w-14"
             viewBox="0 0 68 67"
           >
             <g>
@@ -52,11 +58,11 @@ export default {
         </div>
 
         <!--Icon Container-->
-        <div class="mx-2 my-4">
+        <div class="mx-2 my-4 md:mx-4 md:my-6 xl:mx-6 xl:my-8">
           <!--Instagram SVG-->
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-10 transform transition duration-500 hover:scale-105"
+            class="w-10 transform cursor-pointer transition duration-500 hover:scale-125 md:w-12 xl:w-14"
             viewBox="0 0 73 74"
           >
             <g>
