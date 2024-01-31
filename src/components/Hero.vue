@@ -31,7 +31,7 @@ export default {
 
     <!--Tree Background-->
     <img
-      src="../assets/Coding-Challenge-Image.png"
+      src="../assets/Coding-Challenge-Image.jpg"
       class="absolute -z-20 col-span-11 h-[680px] w-full object-cover object-right sm:h-[800px] md:h-[900px] xl:h-[1024px]"
       alt="Orange Trees"
     />
