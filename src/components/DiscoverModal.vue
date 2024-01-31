@@ -105,12 +105,12 @@ export default {
             <!--Modal Container-->
             <div class="absolute relative">
               <div
-                class="absolute bottom-0 left-[-80px] sm:left-0"
+                class="absolute bottom-0 left-[-90px] sm:left-0"
                 v-if="isModalOpen == true"
               >
                 <!--Animation Expander-->
                 <div
-                  class="z-40 scale-75 md:scale-90 xl:scale-100"
+                  class="z-40 scale-[65%] sm:scale-75 md:scale-90 xl:scale-100"
                   :class="{
                     'animate-expand-modal': expandModal,
                     'animate-colapse-modal': colapseModal,
